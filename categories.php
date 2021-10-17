@@ -25,7 +25,7 @@ include 'layout/include/header.php';
                         <div class="card text-center">
                             <div class="card-body">
                                 <h4 class="card-title">
-                                <a href="category.php?author=<?php echo $row['bookCat'];?>"> <?php echo $row['categoryName']; ?></a>
+                                <a href="category.php?author=<?php echo $row['categoryName']; ?>"><?php echo $row['categoryName']; ?></a>
                                 </h4>
                             </div>
                         </div>

@@ -7,6 +7,8 @@ if (isset($_GET['id'])) {
 ?>
 <!--    End navbar    -->
 
+
+
 <!-- Start show book -->
 <div class="books">
     <div class="container">
@@ -27,6 +29,10 @@ if (isset($_GET['id'])) {
                         <h4><?php echo $row['bookTitle']; ?></h4>
                         <h5>
                             <a href="author.php?author=<?php echo $row['bookAuthor']; ?>"><?php echo $row['bookAuthor']; ?></a>
+                        </h5>
+                        <hr>
+                        <h5>
+                            <a href="category.php?author=<?php echo $row['bookCat']; ?>"><?php echo $row['bookCat']; ?></a>
                         </h5>
                         <hr>
                         <p><?php echo $row['bookContent']; ?></p>
